@@ -14,8 +14,11 @@ nav ul li {
 
 nav ul>li ul {
     position: absolute;
-    top: 0;
-    left: 149px;;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
     display: none;
     }
 
