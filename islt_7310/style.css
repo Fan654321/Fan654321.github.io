@@ -1,2 +1,19 @@
 #h1
 {color:rgb(0,51,0);}
+
+.firstletter::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+  }
+
+  p.textindent{
+    text-indent: 50px;
+  }
+
+  main.page-content-reflection{
+    background-color: lightgrey;
+    width: 1000px;
+    border: none;
+    padding: 50px;
+    margin: 20px;
+  }
