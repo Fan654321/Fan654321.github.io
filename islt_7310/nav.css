@@ -1,0 +1,27 @@
+nav ul li {
+    display: inline-block; 
+    border:  3px dotted #000;
+    text-decoration: underline;
+    text-align: center;
+    width: 150px;
+    list-style-type: none;
+    padding: 20px 20px 20px 20px;
+    margin-top: 0;  
+    margin-left: 10px;
+    position: relative; 
+    }
+
+
+nav ul>li ul {
+    position: absolute;
+    background-color: #F0F8FF;
+    margin-top: 10%;
+    margin-left: -39%;
+    display: none;
+    }
+
+
+nav>ul>li:hover>ul{
+    display: block;
+    }
+

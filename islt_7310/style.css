@@ -1,0 +1,88 @@
+#h1
+{color:rgb(0,51,0);}
+
+.firstletter::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+  }
+
+  p.textindent{
+    text-indent: 50px;
+  }
+
+  main.page-content-reflection{
+    background-color: lightgrey;
+    width: 1000px;
+    border: none;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  /*Media Query*/
+  @media screen and (max-width:850px) 
+  
+  @media screen and (max-width:350px) 
+    
+
+  /* Below is the code for Grid creating for About Page */
+  .wrapper * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    grid-template-rows: 5fr 10fr 100fr 30fr 5fr;
+    grid-gap: 10px;
+    height: 720px;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  main.aboutpageonly
+  {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    }
+
+  aside.aboutpageonly
+  {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    }
+
+  div.aboutpageonly
+  {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    }
+
+  footer 
+  {grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+    grid-row-end: 6;
+  }
+    
