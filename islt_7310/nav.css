@@ -25,3 +25,33 @@ nav>ul>li:hover>ul{
     display: block;
     }
 
+label {margin: 0 40px 0 0;
+font-size: 26px;
+line-height: 70px;
+display: none;
+width:26px;
+float: right; 
+}
+
+#toggle {display: none;}
+
+/* mobile NAV*/
+@media only screen and (max-width: 640px) {
+    label {
+        display:block;
+        cursor:pointer; /* cursor change*/
+    }
+    nav ul{
+        text-align: center;
+        width: 100px;
+        display:none;
+    }
+    
+    nav ul li a{
+        display: block;
+        border:  3px dotted #000;
+        margin:0;
+    }
+    #toggle:checked + ul {display:block;}
+
+    }
