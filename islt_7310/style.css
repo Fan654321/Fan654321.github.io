@@ -18,7 +18,15 @@
     margin: 20px;
   }
 
-
+/* Below is the code for Grid creating for About Page */
+@media only screen and (max-width: 640px) {
+  body {
+    width: 100%;}
+    img {
+      width: 100%;
+      height: 50px;
+    }
+}
   
 
   /* Below is the code for Grid creating for About Page */
@@ -60,6 +68,13 @@
     grid-row-start: 3;
     grid-row-end: 4;
     }
+
+  main.otherpageonly {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      }
 
   aside.aboutpageonly
   {
