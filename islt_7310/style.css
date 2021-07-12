@@ -23,7 +23,7 @@
 
   /* Below is the code for Grid creating for About Page */
   .wrapper * {
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     margin-bottom: 1px;
