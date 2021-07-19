@@ -113,6 +113,14 @@
     grid-row-start: 4;
     grid-row-end: 5;
     }
+
+  div.project1
+    {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      }
  
 
   footer 
@@ -124,7 +132,11 @@
     background-size: cover;
     text-align: left;
   }
-  
+
+
+
+
+
 /*footer animation*/
 footer div img{ transition: 2s; }
 footer div:hover img { transform: scale(2); }
