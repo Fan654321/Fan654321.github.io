@@ -56,7 +56,9 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color:#E8CEBF;
+    background-image: url(image/headerfooterback.jpg);
+    background-size: cover;
+    text-align: center;
   }
   
   nav {
@@ -64,7 +66,7 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    background-color:#DDAF94;
+    background-color:#E8CEBF;
   }
 
   main.aboutpageonly
@@ -74,6 +76,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
     background-color:#FDF8F5;
+    font-family: sans-serif;
     }
 
   main.otherpageonly {
@@ -82,7 +85,7 @@
       grid-row-start: 3;
       grid-row-end: 4;
       background-color:#FDF8F5;
-      
+      font-family: sans-serif;
       }
 
   aside.aboutpageonly
@@ -95,23 +98,36 @@
     }
 
   div.aboutpageonly
+    {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      background-color:#FDF8F5;
+      }
+
+  div.aboutpageonlyvideo
   {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    background-color:#FDF8F5;
     }
+ 
 
   footer 
   {grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 5;
     grid-row-end: 6;
-    background-color:#DDAF94;
+    background-image: url(image/headerfooterback.jpg);
+    background-size: cover;
+    text-align: left;
   }
   
-
+/*footer animation*/
+footer div img{ transition: 2s; }
+footer div:hover img { transform: scale(2); }
   
 /* about page, quote page */
 blockquote {font-family: NotoSans-Regular, serif; }
@@ -123,6 +139,7 @@ blockquote {font-family: NotoSans-Regular, serif; }
      text-shadow: none !important;}
   nav {display: none;}
   aside {display: none;}
+  div.aboutpageonlyvideo {display: none;}
   header {
     margin-bottom: 0;
     border: none;
@@ -137,4 +154,5 @@ main.aboutpageonly
   background-color:#FDF8F5;
   font-size: 10pt;
   }
+div.forversionprint {display: none;}
 }
