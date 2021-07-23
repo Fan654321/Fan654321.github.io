@@ -186,3 +186,21 @@ table td {border: 1px solid #e3e3e3;
           padding: 4px 8px;}
 table tr:nth-child(odd) td {background-color: #e7edf0;}
 
+
+label.form{
+  display:inline-block;
+  width:200px;
+  margin-right:30px;
+  text-align:right;
+  }
+  
+  input{
+  
+  }
+  
+  fieldset{
+  border:none;
+  width:500px;
+  margin:0px auto;
+  }
+
