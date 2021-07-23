@@ -28,12 +28,16 @@
 @media only screen and (max-width: 640px) {
   body {
     width: 100%;}
-    img {
-      width: 100%;
-      height: auto;
-    }
-}
   
+  img {
+      width: 50%;
+      height: auto;}
+
+  tr {font-size: 12px;}
+  table {width: 90%;
+          margin-left: 5%;
+        margin-right: 5%;}
+      }
 
   /* Below is the code for Grid creating for About Page */
   .wrapper * {
@@ -135,8 +139,6 @@
 
 
 
-
-
 /*footer animation*/
 footer div img{ transition: 2s; }
 footer div:hover img { transform: scale(2); }
@@ -155,7 +157,8 @@ blockquote {font-family: NotoSans-Regular, serif; }
   header {
     margin-bottom: 0;
     border: none;
-    text-align: center;}
+    text-align: center;
+  }
 @page {margin: 1cm}
 main.aboutpageonly
 {
@@ -168,3 +171,13 @@ main.aboutpageonly
   }
 div.forversionprint {display: none;}
 }
+
+/*about page table about education detials */
+table {border-collapse: collapse;}
+table th {text-align: left;
+            background-color:#266150 ;
+          color: #FFF;
+        padding: 4px 30px 4px 8px;}
+table td {border: 1px solid #e3e3e3;
+          padding: 4px 8px;}
+table tr:nth-child(odd) td {background-color: #e7edf0;}
