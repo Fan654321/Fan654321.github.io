@@ -38,7 +38,7 @@ float: right;
 
 /* mobile NAV*/
 @media only screen and (max-width:640px) {
-    label {
+    label.nav {
         display:block;
         cursor:pointer; /* cursor change*/
     }
