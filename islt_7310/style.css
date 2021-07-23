@@ -37,6 +37,8 @@
   table {width: 90%;
           margin-left: 5%;
         margin-right: 5%;}
+  
+  form {width: 100%;}
       }
 
   /* Below is the code for Grid creating for About Page */
@@ -90,6 +92,8 @@
       grid-row-end: 4;
       background-color:#FDF8F5;
       font-family: sans-serif;
+      width: 800px;
+      margin: 0 auto;
       }
 
   aside.aboutpageonly
@@ -181,3 +185,4 @@ table th {text-align: left;
 table td {border: 1px solid #e3e3e3;
           padding: 4px 8px;}
 table tr:nth-child(odd) td {background-color: #e7edf0;}
+

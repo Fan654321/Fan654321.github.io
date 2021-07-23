@@ -10,7 +10,7 @@ Developed: 7/22, 2021
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
-               <title>Home</title>
+               <title>Contact</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
                <link rel="shortcup icon" type="image/png" href="image/headicon.png">
@@ -42,8 +42,28 @@ Developed: 7/22, 2021
         </ul>
     </nav> 
 
-    <main class="page-content otherpageonly" aria-label="Content">
-   
+    <main class="page-content otherpageonly form" aria-label="Content">
+        <form action="mailto:fyu@mail.missouri.edu?Subject=From%20Personal%20Website%message" method="post" enctype="text/plain">
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname"  name="firstname" placeholder="First Name" required>
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" placeholder="Your Message"  rows="6" maxlength="3000" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="submit">Reset</button>
+        </form>
+
     </main>
 
 
