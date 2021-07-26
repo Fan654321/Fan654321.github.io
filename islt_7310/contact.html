@@ -9,70 +9,80 @@ Developed: 7/22, 2021
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-               <title>Contact</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
-               <link rel="shortcup icon" type="image/png" href="image/headicon.png">
-               <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/png" href="image/headicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header class="page-header">
-        <h1 ID="h1">
-            <br/> Fan Yu</h1>
-        <h3>PhD student at the Unviversity of Missouri - Columbia
+<header class="page-header">
+    <h1 ID="h1">
+        <br/> Fan Yu</h1>
+    <h3>PhD student at the Unviversity of Missouri - Columbia
         <br/> School of Information Science abundant Learning Technologies</h3>
-    </header>
+</header>
 
-    <nav>
+<nav>
+    <div class="nav-div">
         <label class="nav" for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle"/>
         <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="project.html">Projects</a>
-            <ul>
-                <li><a href="project1.html">project 1</a></li>
-                <li><a href="project2.html">project 2</a></li>  
-                <li><a href="project3.html">project 3</a></li>
-             </ul>
-        </li>
-        <li><a href="reflection.html">Personal Reflection</a></li>
-        <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a>
+                <ul>
+                    <li><a href="project.html#project1">project 1</a></li>
+                        <li><a href="project.html#project2">project 2</a></li>
+                        <li><a href="project.html#project3">project 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Personal Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav> 
+    </div>
+</nav>
 
-    <main class="page-content otherpageonly form" aria-label="Content">
-        <form action="mailto:fyu@mail.missouri.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
-            <div>
+<main class="page-content otherpageonly form" aria-label="Content" style="display: table;">
+    <form action="mailto:fyu@mail.missouri.edu?Subject=Portfolio%20Website%20Contact" method="post"
+          enctype="text/plain" style="display: table-row;">
+            <div class="contact-div">
                 <label class="form" for="firstname">First name</label>
-                <input type="text" id="firstname"  name="firstname" placeholder="First Name" required>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
             </div>
-            <div>
+            <div class="contact-div">
                 <label class="form" for="lastname">Last Name</label>
                 <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
             </div>
-            <div>
+            <div class="contact-div">
                 <label class="form" for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email Address" required>
             </div>
-            <div>
+            <div class="contact-div" >
                 <label class="form" for="message">Your Message</label>
-                <textarea name="message" id="message" placeholder="Your Message"  rows="6" maxlength="3000" required></textarea>
+                <textarea name="message" id="message" placeholder="Your Message" rows="6" maxlength="3000"
+                          required></textarea>
             </div>
-            <button type="submit">Submit</button>
-            <button type="submit">Reset</button>
-        </form>
+            <div class="contact-div" style="display: flex; justify-content: center">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
 
-    </main>
+    </form>
+</main>
 
 
-    <footer>
-        <p>Author: Fan Yu 2021. All rights reserved.&#8364;</p>
-        <div ><img src="image/phone.png"> &nbsp;+1 000 XXX xxxx &nbsp;&nbsp;<img src="image/mailbox.png"><a href="mailto:fyu@mail.missouri.com">&nbsp;&nbsp;fyu@mail.missouri.com</a></div>
-        <br /><div class="forversionprint"> Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            <br />Background photo created by denamorado - <a href='https://www.freepik.com/photos/background'>Background photo created by denamorado - www.freepik.com</a>
-        </div>
-    </footer>
+<footer>
+    <p>Author: Fan Yu 2021. All rights reserved.&#8364;</p>
+    <div><img src="image/phone.png" alt="phone"> &nbsp;+1 000 XXX xxxx &nbsp;&nbsp;<img src="image/mailbox.png" alt="mailbox"><a
+            href="mailto:fyu@mail.missouri.com">&nbsp;&nbsp;fyu@mail.missouri.com</a></div>
+    <br/>
+    <div class="forversionprint"> Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        <br/>Background photo created by denamorado - <a href='https://www.freepik.com/photos/background'>Background
+            photo created by denamorado - www.freepik.com</a>
+    </div>
+</footer>
 </body>
 </html>

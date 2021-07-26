@@ -1,63 +1,86 @@
 /* font */
-@font-face { 
-  font-family: NotoSans-Regular; /*this is where we give our font a name so we can use it!*/
-  src: url("NotoSans-Regular.ttf"); /*remember this is how we link to files in CSS!*/
-  }
+@font-face {
+    font-family: NotoSans-Regular; /*this is where we give our font a name so we can use it!*/
+    src: url("NotoSans-Regular.ttf"); /*remember this is how we link to files in CSS!*/
+}
 
-#h1
-{color:#4F4846;
-  font-family: Luminari, fantasy;}
+#h1 {
+    color: #4F4846;
+    font-family: Luminari, fantasy;
+}
 
 .firstletter::first-letter {
     font-size: 200%;
     color: #8A2BE2;
-  }
+}
 
-  p.textindent{
+p.textindent {
     text-indent: 50px;
-  }
+}
 
-  main.page-content-reflection{
+main.page-content-reflection {
     border: none;
     padding: 50px;
     margin: 20px;
+}
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
   }
 
+  
 
 /* Below is the code for Grid creating for About Page */
 @media only screen and (max-width: 640px) {
-  body {
-    width: 100%;}
-  
-  img {
-      width: 50%;
-      height: auto;}
+    body {
+        width: 100%;
+    }
+    
+    img {
+        width: 50%;
+        height: auto;
+    }
 
-  tr {font-size: 12px;}
-  table {width: 90%;
-          margin-left: 5%;
-        margin-right: 5%;}
-  
-  form {width: 100%;}
-      }
+    tr {
+        font-size: 12px;
+    }
 
-  /* Below is the code for Grid creating for About Page */
-  .wrapper * {
+    table {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    body > div > div > video {
+        width: 100px;
+    }
+
+   footer {
+        display: none;
+    }
+}
+
+/* Below is the code for Grid creating for About Page */
+.wrapper * {
     justify-content: center;
     align-items: center;
     margin-bottom: 1px;
     margin-right: 1px;
-  }
+}
 
-  .wrapper {
+.wrapper {
     display: grid;
-    grid-template-columns: 8fr 3fr;
+    grid-template-columns: 5fr 5fr;
     grid-template-rows: 5fr 10fr 100fr 30fr 5fr;
     grid-gap: 10px;
     height: 720px;
-  }
+}
 
-  header {
+header {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -65,142 +88,186 @@
     background-image: url(image/headerfooterback.jpg);
     background-size: cover;
     text-align: center;
-  }
-  
-  nav {
+}
+
+nav {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    background-color:#E8CEBF;
-  }
+    background-color: #E8CEBF;
+}
 
-  main.aboutpageonly
-  {
+.contact-div {
+    margin: 10px 0 10px 0;
+}
+
+main.aboutpageonly {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
-    grid-row-end: 4;
-    background-color:#FDF8F5;
+    grid-row-end: 5;
+    background-color: #FDF8F5;
     font-family: sans-serif;
-    }
+    padding: 10px 25px 10px 25px;
+}
 
-  main.otherpageonly {
+
+ main.otherpageonly {
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 3;
       grid-row-end: 4;
       background-color:#FDF8F5;
       font-family: sans-serif;
-      width: 800px;
       margin: 0 auto;
+      padding: 50px;
       }
 
-  aside.aboutpageonly
-  {
+aside.aboutpageonly {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color:#FDF8F5;
-    }
+    background-color: #FDF8F5;
+    display: flex;
+    justify-content: center;
+}
 
-  div.aboutpageonly
-    {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 4;
-      grid-row-end: 5;
-      background-color:#FDF8F5;
-      }
 
-  div.aboutpageonlyvideo
-  {
+
+
+/*
+div.aboutpageonly {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #FDF8F5;
+}*/
+
+div.aboutpageonlyvideo {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    }
+    background-color: #FDF8F5;
+    display: flex;
+    justify-content: center;
+}
 
-  div.project1
-    {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 4;
-      grid-row-end: 5;
-      }
- 
+div.project1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
 
-  footer 
-  {grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
     grid-row-end: 6;
     background-image: url(image/headerfooterback.jpg);
     background-size: cover;
     text-align: left;
-  }
-
+}
 
 
 /*footer animation*/
-footer div img{ transition: 2s; }
-footer div:hover img { transform: scale(2); }
-  
+footer div img {
+    transition: 2s;
+}
+
+footer div:hover img {
+    transform: scale(2);
+}
+
 /* about page, quote page */
-blockquote {font-family: NotoSans-Regular, serif; }
+blockquote {
+    font-family: NotoSans-Regular, serif;
+}
+
 /* about page, print*/
 @media print {
-  * {background: transparent !important;
-     color: #000 !important;
-     box-shadow: none !important;
-     text-shadow: none !important;}
-  nav {display: none;}
-  aside {display: none;}
-  div.aboutpageonlyvideo {display: none;}
-  header {
-    margin-bottom: 0;
-    border: none;
-    text-align: center;
-  }
-@page {margin: 1cm}
-main.aboutpageonly
-{
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  background-color:#FDF8F5;
-  font-size: 10pt;
-  }
-div.forversionprint {display: none;}
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    nav {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    div.aboutpageonlyvideo {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 0;
+        border: none;
+        text-align: center;
+    }
+
+    @page {
+        margin: 1cm
+    }
+
+    main.aboutpageonly {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #FDF8F5;
+        font-size: 10pt;
+    }
+
+    div.forversionprint {
+        display: none;
+    }
 }
 
 /*about page table about education detials */
-table {border-collapse: collapse;}
-table th {text-align: left;
-            background-color:#266150 ;
-          color: #FFF;
-        padding: 4px 30px 4px 8px;}
-table td {border: 1px solid #e3e3e3;
-          padding: 4px 8px;}
-table tr:nth-child(odd) td {background-color: #e7edf0;}
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+    background-color: #266150;
+    color: #FFF;
+    padding: 4px 30px 4px 8px;
+}
+
+table td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #e7edf0;
+}
 
 
-label.form{
-  display:inline-block;
-  width:200px;
-  margin-right:30px;
-  text-align:right;
-  }
-  
-  input{
-  
-  }
-  
-  fieldset{
-  border:none;
-  width:500px;
-  margin:0px auto;
-  }
+label.form {
+    display: inline-block;
+    width: 200px;
+    margin-right: 30px;
+    text-align: right;
+}
+
+
+
+fieldset {
+    border: none;
+    width: 500px;
+    margin: 0px auto;
+}
 

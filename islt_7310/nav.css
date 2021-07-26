@@ -1,60 +1,89 @@
 nav ul li {
-    display: inline-block; 
-    border:  3px dotted #000;
+    display: inline-block;
+    border: 3px dotted #000;
     text-decoration: underline;
     text-align: center;
     width: 150px;
     list-style-type: none;
     padding: 20px 20px 20px 20px;
-    margin-top: 0;  
+    margin-top: 0;
     margin-left: 10px;
-    position: relative; 
-    }
+    position: relative;
+}
 
 
-nav ul>li ul {
+nav ul > li ul {
     position: absolute;
-    background-color: #F0F8FF;
+    background-color: #F0F8FF;
     margin-top: 10%;
     margin-left: -39%;
     display: none;
-    background-color:#E8CEBF;
-    }
-
-
-nav>ul>li:hover>ul{
-    display: block;
-    }
-
-label.nav {margin: 0 40px 0 0;
-font-size: 26px;
-line-height: 70px;
-display: none;
-width:26px;
-float: right; 
+    background-color: #E8CEBF;
 }
 
-#toggle {display: none;}
+
+nav > ul > li:hover > ul {
+    padding: 12px 0 12px 0;
+    display: block;
+    left: 60px;
+}
+
+nav > ul > li > ul > li {
+    z-index: 1;
+    background-color: #E8CEBF;
+}
+
+nav > div.nav-div > ul > li:hover > ul {
+    padding: 12px 0 12px 0;
+    display: block;
+    left: 60px;
+}
+
+nav > div.nav-div > ul > li > ul > li {
+    z-index: 1;
+    background-color: #E8CEBF;
+}
+
+label.nav {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: center;
+}
 
 /* mobile NAV*/
-@media only screen and (max-width:640px) {
+@media only screen and (max-width: 640px) {
     label.nav {
-        display:block;
-        cursor:pointer; /* cursor change*/
+        display: block;
+        cursor: pointer; /* cursor change*/
     }
 
-    nav ul{
+    nav ul {
         text-align: center;
         width: 100px;
-        display:none;
+        display: none;
     }
-    
-    nav ul li a{
-        display: block;
-        border:  3px dotted #000;
-        margin:0;
-    }
-    
-    #toggle:checked + ul {display:block;}
 
+    nav ul li a {
+        display: block;
+        border: 3px dotted #000;
+        margin: 0;
     }
+
+    #toggle:checked + ul {
+        display: block;
+    }
+
+}
+
