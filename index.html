@@ -1,0 +1,111 @@
+<!-- 
+*****************************************************************************
+Title:  Home Page
+Use:  ISLT 7355 WEEK 2 ACTIVITY 
+Author:  Fan Yu
+Developed: 7/4, 2021
+****************************************************************************** 
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/png" href="image/headicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="page-header">
+    <h1 ID="h1">
+        <br/> Fan Yu</h1>
+    <h3>PhD student at the Unviversity of Missouri - Columbia
+        <br/> School of Information Science abundant Learning Technologies</h3>
+</header>
+<nav>
+    <div class="nav-div">
+        <label class="nav" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a>
+                <ul>
+                    <li><a href="project.html#project1">3D Learning Game Design by Unity</a></li>
+                    <li><a href="project.html#project2">Project Module Leader: UX study for TigerAware survey platform</a></li>
+                    <li><a href="project.html#project3">Internship Leader: UX study for Zoom meeting platform</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Personal Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="page-content otherpageonly" aria-label="Content">
+    <div class="face">
+        <div class="eye-outer">
+            <div class="left-eye">
+                <svg viewBox="0 0 21 21">
+                    <circle class="eye eye-left" cx="10.5" cy="10.5" r="2.25"></circle>
+                    <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
+                    <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5"></path>
+                </svg>
+            </div>
+            <div class="right-eye">
+                <svg viewBox="0 0 21 21">
+                    <circle class="eye eye-right" cx="10.5" cy="10.5" r="2.25"></circle>
+                    <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
+                    <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="mouth-outer">
+            <svg viewBox="0 0 21 21">
+                <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
+                <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5"></path>
+            </svg>
+        </div>
+    </div>
+    <h2>Hey, I’m Fan Yu.</h2>
+    <p> Researcher for User Experience and STEM Education
+        <br/> Welcome to my website
+        <br/> This website is the online residence of Fan Yu. This website will be a powerful tool to help me introduce
+        myself.
+        <br/> <br/> The following pages will help you know me better.
+        <br/>● About Page: I will introduce myself specifically on this page. You will find the information of
+        my education overview, a headshot, an updated resume, and a short Resume video.
+        <br/>● Projects/Experience Page: I will demonstrate the projects or experiences I participated in
+        related to UX design. After reading this page, you will know what value I can bring to your
+        companies.
+        <br/>● Personal Reflection Page: This page will include a personal reflection of my artist statement and career
+        goals.
+        <br/>● Contact Page: Contact me on this page.</p>
+</main>
+
+
+<footer>
+    <p>Author: Fan Yu 2021. All rights reserved.&#8364;</p>
+    <div><img src="image/phone.png" alt="phone"> &nbsp;+1 000 XXX xxxx &nbsp;&nbsp;<img src="image/mailbox.png" alt="mailbox"><a
+            href="mailto:fyu@mail.missouri.com">&nbsp;&nbsp;fyu@mail.missouri.com</a></div>
+    <br/>
+    <div class="forversionprint"> Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        <br/>Background photo created by denamorado - <a href='https://www.freepik.com/photos/background'>Background
+            photo created by denamorado - www.freepik.com</a>
+    </div>
+</footer>
+<!--adopted from https://dev.to/stackfindover/animated-eyes-follow-mouse-cursor-javascript-mouse-move-3n40-->
+<script>
+    const eye1 = document.querySelector('.eye-left');
+    const eye2 = document.querySelector('.eye-right')
+    window.addEventListener('mousemove', (evt) => {
+        const x = -(window.innerWidth / 2 - evt.pageX) / 160;
+        const y = -(window.innerHeight / 2 - evt.pageY) / 160;
+        eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
+        eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
+    });
+</script>
+</body>
+</html>
